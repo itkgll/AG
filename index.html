@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Login Duluu Bosss !!</title>
+    <head>
+      <script>
+        if (top != self) {
+          if (document.referrer.indexOf(window.location.host) == -1) {
+            top.location.href = self.location.href;
+          }
+        }
+      </script>
+      <!--[ SingleItem title ]-->
+      <title>membuat fitur login password di blogger - demo</title>
+      <!--[ Meta for browser ]-->
+      <meta charset="UTF-8" />
+      <meta
+        content="width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5"
+        name="viewport"
+      />
+      <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+      <!--[ Browser data, description and keyword ]-->
+      <link
+        href="https://demo.wendycode.com/2021/04/login-password.html"
+        rel="canonical"
+      />
+      <meta content="" name="description" />
+      <meta
+        content="demo, membuat fitur login password di blogger, Wendy Code, Wendy Blogger, Tutorial Blogger, Widget Blogger, Tools Blogger, Javascript, CSS, HTML "
+        name="keywords"
+      />
+      <link href="" rel="image_src" />
+      <!--[ Generator and rrs ]-->
+      <meta content="blogger" name="generator" />
+      <link
+        href="https://demo.wendycode.com/feeds/posts/default"
+        rel="alternate"
+        title="demo Â» Atom"
+        type="application/atom+xml"
+      />
+      <link
+        href="https://demo.wendycode.com/feeds/posts/default?alt=rss"
+        rel="alternate"
+        title="demo Â» Feed"
+        type="application/rss+xml"
+      />
+      <link
+        href="https://demo.wendycode.com/feeds/comments/default?alt=rss"
+        rel="alternate"
+        title="demo Â» Comments Feed"
+        type="application/rss+xml"
+      />
+      <!--[ Theme Color ]-->
+      <meta content="#fefefe" name="theme-color" />
+      <meta content="#fefefe" name="msapplication-navbutton-color" />
+      <meta content="#fefefe" name="apple-mobile-web-app-status-bar-style" />
+      <meta content="true" name="apple-mobile-web-app-capable" />
+      <!--[ Favicon ]-->
+      <link
+        href="https://demo.wendycode.com/favicon.ico"
+        rel="apple-touch-icon"
+        sizes="120x120"
+      />
+      <link
+        href="https://demo.wendycode.com/favicon.ico"
+        rel="apple-touch-icon"
+        sizes="152x152"
+      />
+      <link
+        href="https://demo.wendycode.com/favicon.ico"
+        rel="icon"
+        type="image/x-icon"
+      />
+      <link
+        href="https://demo.wendycode.com/favicon.ico"
+        rel="shortcut icon"
+        type="image/x-icon"
+      />
+      <!--[ Open graph ]-->
+      <meta
+        content="membuat fitur login password di blogger"
+        property="og:title"
+      />
+      <meta
+        content="https://demo.wendycode.com/2021/04/login-password.html"
+        property="og:url"
+      />
+      <meta content="demo" property="og:site_name" />
+      <meta content="article" property="og:type" />
+      <meta content="" property="og:description" />
+      <meta
+        content="membuat fitur login password di blogger"
+        property="og:image:alt"
+      />
+      <meta
+        content="https://1.bp.blogspot.com/-lQw-soYL0Xs/X9V1ghAhAyI/AAAAAAAACQg/7bC2wZpj8psZeLTyIOnLq5nkPPFiznVbQCNcBGAsYHQ/s320/wendycode-banner.jpg"
+        property="og:image"
+      />
+      <!--[ Twitter Card ]-->
+      <meta
+        content="membuat fitur login password di blogger"
+        name="twitter:title"
+      />
+      <meta
+        content="https://demo.wendycode.com/2021/04/login-password.html"
+        name="twitter:url"
+      />
+      <meta content="" name="twitter:description" />
+      <meta content="summary_large_image" name="twitter:card" />
+      <meta
+        content="membuat fitur login password di blogger"
+        name="twitter:image:alt"
+      />
+      <meta
+        content="https://1.bp.blogspot.com/-lQw-soYL0Xs/X9V1ghAhAyI/AAAAAAAACQg/7bC2wZpj8psZeLTyIOnLq5nkPPFiznVbQCNcBGAsYHQ/s320/wendycode-banner.jpg"
+        name="twitter:image:src"
+      />
+      <!--[ CSS stylesheet ]-->
+      <style>
+        <!-- /* <style id='page-skin-1' type='text/css'><!--
+              /* Variable color */
+              :root{
+              --head-color: #262d3d ;
+              --body-color: #48525c ;
+              --body-altColor: #767676 ;
+              --body-bg: #fefefe ;
+              --link-color: #f89000 ;
+              --link-bg: #f89000 ;
+              --icon-color: #48525c ;
+              --icon-alt: #455065 ;
+              --icon-sec: #767676 ;
+              --header-text: #48525c ;
+              --header-title: 17px ;
+              --header-bg: #fefefe ;
+              --header-icon: #262d3d ;
+              --header-height: 60px ;
+              --notif-height: 45px ;
+              --notif-bg: #e1f5fe ;
+              --notif-color: #01579b ;
+              --content-bg: #fefefe ;
+              --content-border: #eceff1 ;
+              --transparent-bg: rgba(0,0,0,.03);
+              --page-maxContent: 780px ;
+              --post-titleSize: 32px ;
+              --post-fontSize: 15px ;
+              --widget-titleSize: 15px ;
+              --widget-titleWeight: 400 ; /* Fill with 400(normal) or 700(bold) */
+              --widget-titleAfter: 1px ;
+              --nav-width: 260px ;
+              --nav-border: 1px ;
+              --nav-text: #262d3d ;
+              --nav-icon: #48525c ;
+              --nav-bg: #fefefe ;
+              --font-head: Poppins, sans-serif ;
+              --font-body: 'Noto Sans', sans-serif ;
+              --font-code: 'Fira Mono', monospace ;
+              --transition-1: all .1s ease ;
+              --transition-2: all .2s ease ;
+              --transition-4: all .4s ease ;
+              --highlight-bg: #f6f6f6 ;
+              --highlight-color: #2f3337 ;
+              --highlight-orange: #b75501 ;
+              --highlight-blue: #015692 ;
+              --highlight-green: #54790d ;
+              --highlight-red: #f15a5a ;
+              --highlight-comment: #656e77 ;
+              --dark-text: #fefefe ;
+              --dark-textAlt: #989b9f ;
+              --dark-link: #005af0 ;
+              --dark-bg: #1e1e1e ;
+              --dark-bgAlt: #2d2d30 ;
+              --dark-bgSec: #252526 ;
+              }
+              /* Font Body */
+              @font-face{font-family: 'Noto Sans';font-style: italic;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/notosans/v11/o-0OIpQlx3QUlC5A4PNr4ARMQ_m87A.woff2) format('woff2'), url(https://fonts.gstatic.com/s/notosans/v11/o-0OIpQlx3QUlC5A4PNr4DRG.woff) format('woff')}
+              @font-face{font-family: 'Noto Sans';font-style: italic;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/notosans/v11/o-0TIpQlx3QUlC5A4PNr4Az5ZuyDzW0.woff2) format('woff2'), url(https://fonts.gstatic.com/s/notosans/v11/o-0TIpQlx3QUlC5A4PNr4Az5ZtyH.woff) format('woff')}
+              @font-face{font-family: 'Noto Sans';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/notosans/v11/o-0IIpQlx3QUlC5A4PNr5TRA.woff2) format('woff2'), url(https://fonts.gstatic.com/s/notosans/v11/o-0IIpQlx3QUlC5A4PNb4Q.woff) format('woff')}
+              @font-face{font-family: 'Noto Sans';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/notosans/v11/o-0NIpQlx3QUlC5A4PNjXhFVZNyB.woff2) format('woff2'), url(https://fonts.gstatic.com/s/notosans/v11/o-0NIpQlx3QUlC5A4PNjXhFlYA.woff) format('woff')}
+              /* Font Heading */
+              @font-face {font-family: 'Poppins';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/poppins/v13/pxiByp8kv8JHgFVrLCz7V1g.woff) format('woff'), url(https://fonts.gstatic.com/s/poppins/v13/pxiByp8kv8JHgFVrLCz7Z1xlFQ.woff2) format('woff2')}
+              @font-face {font-family: 'Poppins';font-style: italic;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/poppins/v15/pxiDyp8kv8JHgFVrJJLmy15lEw.woff) format('woff'), url(https://fonts.gstatic.com/s/poppins/v15/pxiDyp8kv8JHgFVrJJLmy15VF9eO.woff2) format('woff2')}
+              @font-face {font-family: 'Poppins';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLEj6V1g.woff) format('woff'), url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLEj6Z1xlFQ.woff2) format('woff2')}
+              @font-face {font-family: 'Poppins';font-style: italic;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/poppins/v15/pxiDyp8kv8JHgFVrJJLmr19lEw.woff) format('woff'), url(https://fonts.gstatic.com/s/poppins/v15/pxiDyp8kv8JHgFVrJJLmr19VF9eO.woff2) format('woff2')}
+              /* Source Code Font */
+              @font-face {font-family: 'Fira Mono';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/firamono/v9/N0bX2SlFPv1weGeLZDtQIg.woff) format('woff'), url(https://fonts.gstatic.com/s/firamono/v9/N0bX2SlFPv1weGeLZDtgJv7S.woff2) format('woff2')}
+              /* Standar CSS */
+              *,:after,:before{-webkit-box-sizing:border-box;box-sizing:border-box}
+              h1, h2, h3, h4, h5, h6{margin:0;font-weight:700;font-family:var(--font-head);color:var(--head-color)} h1{font-size:1.8rem} h2{font-size:1.7rem} h3{font-size:1.5rem} h4{font-size:1.3rem} h5{font-size:1.2rem} h6{font-size:1.1rem}
+              a{color:var(--link-color);text-decoration:none}
+              table{border-spacing:0} iframe{max-width:100%;border:0;margin-left:auto;margin-right:auto} button, select, textarea{font:inherit;font-size:100%;color:inherit;line-height:normal;vertical-align:baseline} img{display:block;position:relative;max-width:100%;height:auto}
+              svg{width:22px;height:22px;fill:var(--icon-color)}
+              svg.line, svg .line{fill:none!important;stroke:var(--icon-color);stroke-linecap:round;stroke-linejoin:round;stroke-width:1}
+              svg.c-1, svg .c-1{fill:var(--icon-alt)}
+              svg.c-2, svg .c-2{fill:var(--icon-sec); opacity:.4}
+              .hidden, .replaced{display:none} .invisible{visibility:hidden} .clear{width:100%;display:block;margin:0;padding:0;float:none;clear:both}
+              .fullClose{display:block;position:fixed;top:0;left:0;right:0;bottom:0;z-index:2;transition:var(--transition-1);background:transparent;opacity:0;visibility:hidden}
+              .free:after, .new:after{content:'Free!';color:var(--link-color);font-size:85%;font-weight:400;margin-left:5px} .new:after{content:'New!'}
+              /* Error Page */
+              .error404{display:flex;align-items:center;justify-content:center;height:100vh;text-align:center;padding:0} .errorPage{width:calc(100% - 40px);max-width:500px;margin:auto} .errorPage h3{font-size:1.414rem;font-family:var(--font-body)} .errorPage h3 span{display:block;font-size:140px;line-height:.8;margin-bottom:-1rem;color:#ebebf0} .errorPage p{margin:30px 5%;line-height:1.6em;font-family:var(--font-body)} .errorPage .button{margin:0;padding-left:2em;padding-right:2em;font-size:14px}
+              /* Main Element */
+              html{scroll-behavior:smooth;overflow-x:hidden}
+              body{position:relative;margin:0;padding:0!important;width:100%;font-family:var(--font-body);font-size:14px;color:var(--body-color);background-color:var(--body-bg);-webkit-font-smoothing: antialiased; word-break: break-word}
+              .mainWrapper{position:relative}
+              /* Main Menu */
+              .mainInner{margin-left:var(--nav-width);margin-bottom:0; padding:25px; transition:var(--transition-1); position:relative}
+              .mainMenu{position:fixed;top:0;left:0;bottom:0; width:var(--nav-width);background-color:var(--nav-bg);border-right:var(--nav-border) solid var(--content-border); font-size:13px;color:var(--nav-text); transition:var(--transition-1); z-index:2}
+              .mainMenu .section{padding-top:calc(var(--header-height) + 15px);padding-bottom:90px; height:100%}
+              .mainMenu .section:hover{overflow-y:auto}
+              .mainMenu .fullClose.menu{transition:var(--transition-1)}
+              .mainMenu svg{width:20px;height:20px;fill:var(--nav-icon)}
+              .mainMenu svg.line{fill:none;stroke:var(--nav-icon)}
+              .mainMenu ul{margin:0;padding:0;list-style:none}
+              .htmlMenu > li{position:relative}
+              .htmlMenu > li.break:after{content:'';display:block;width:calc(100% - 50px);border-bottom:1px solid var(--content-border);margin:12px 25px}
+              .htmlMenu > li li{transition:var(--transition-2); max-height:0;opacity:0;visibility:hidden}
+              .htmlMenu > li li a{white-space:nowrap; display:block;position:relative; padding:10px 25px 10px 60px; color:inherit; opacity:.7}
+              .htmlMenu .link:before, .htmlMenu > li li a:before{content:''; white-space:nowrap;overflow:hidden;text-overflow:ellipsis; position:absolute;top:0;left:0;bottom:0; display:block;background-color:transparent; width:2px; border-radius:0 2px 2px 0}
+              .htmlMenu .link:hover:before, .htmlMenu > li li a:hover:before{background-color:var(--link-color); opacity:.7}
+              .htmlMenu .link:hover svg, #LinkList002 label:hover svg, .socialLink li .link:hover svg{fill:var(--link-color)}
+              .htmlMenu .link:hover svg.line, #LinkList002 label:hover svg.line, .socialLink li .link:hover svg.line{fill:none;stroke:var(--link-color)}
+              .htmlMenu .link{white-space:nowrap; display:flex;align-items:center;width:100%; padding:10px 25px;position:relative; color:inherit}
+              .htmlMenu .link svg{flex-shrink:0;margin-right:15px}
+              .htmlMenu .link svg.down{width:16px;height:16px; margin-left:auto;margin-right:0}
+              .htmlMenu .link .name{display:block; white-space:nowrap;overflow:hidden;text-overflow:ellipsis; font-weight:400}
+              .htmlMenu a.link:hover, .htmlMenu > li li a:hover{background-color:var(--transparent-bg)}
+              .htmlMenu .close{position:fixed;top:0;left:0;right:0; width:calc(var(--nav-width) - var(--nav-border));height:var(--header-height);background-color:var(--nav-bg); display:flex;align-items:center; transition:var(--transition-1); z-index:2}
+              .htmlMenu .close .link:before{display:none}
+              .htmlMenu .close .link .name:before{content:attr(data-text); font-size:12px;opacity:.7}
+              /* blogContent Section */
+              .blogContent .widget .title{display:flex;align-items:center;justify-content:space-between; margin:0 0 30px; font-size:var(--widget-titleSize);font-weight:var(--widget-titleWeight);font-family:var(--font-body);position:relative}
+              .blogContent .widget .title:after{content:'';display:block;width:18px;position:absolute;bottom:-8px;border-bottom:var(--widget-titleAfter) solid var(--dark-textAlt)}
+              .blogContent .widget .title.search{font-size:14px; display:block}
+              .blogContent .widget .title.search:after{display:none}
+              .blogContent .widget .title.search span{font-weight:400;font-size:90%; opacity:.7; margin-right:8px}
+              .blogContent .widget .title.search span:before{content:attr(data-text)}
+              .blogContent .widget .title.search span.home:after{content:'/'; margin-left:8px}
+              .blogContent .widget .title svg{height:18px;width:18px; opacity:.7}
+              .blogContent .widget .imgThumb{display:block;position:absolute;top:50%;left:50%;max-width:none;max-height:105%; font-size:12px;text-align:center; transform:translate(-50%, -50%)}
+              .blogContent .widget:not(:last-child), .blogContent .sidebar > *:not(:last-child){margin-bottom:50px}
+              .blogContent{display:flex;flex-wrap:wrap}
+              .blogContent .mainbar{flex:1 0 calc(100% - 330px);width:calc(100% - 330px); }
+              .blogContent .mainbar{margin-right:auto;margin-left:auto; transition:var(--transition-1)}
+              .blogContent .mainbar > *:not(:last-child){margin-bottom:25px;padding-bottom:25px; border-bottom:1px solid var(--content-border)}
+              .blogContent .mainbar > .no-items{margin-bottom:0;padding-bottom:0;border-bottom:0}
+              .blogContent .mainbar{max-width:780px}
+              .blogContent .sidebar{max-width:600px}
+              .blogContent .sidebar{flex:0 0 330px;width:330px; padding-left:30px}
+              .blogContent .sidebar #side-sticky{position:-webkit-sticky;position:sticky;top:75px}
+              .onPage .blogContent .mainbar, .onPage footer .creditInner{max-width:var(--page-maxContent); margin-left:auto;margin-right:auto}
+              /* blogPosts Section */
+              .blogPosts{display:flex;flex-wrap:wrap; position:relative;width:calc(100% + 20px);left:-10px}
+              .blogPosts.empty{width:100%;left:0}
+              .blogPosts.empty ~ .blogPager{justify-content:flex-start}
+              .blogPosts .hentry{display:block;position:relative; width:calc(33.333% - 20px); margin-left:10px;margin-right:10px;margin-bottom:40px; padding-bottom:38px}
+              .blogPosts .hentry.noInfo, .blogPosts .hentry.product, .blogPosts div.hentry, .blogPosts .hentry.noComment{padding-bottom:0}
+              .blogPosts .hentry.noAd .widget, .Blog ~ .HTML{display:none}
+              .onItem .blogPosts{display:block; width:100%;left:0}
+              .onItem .blogPosts .hentry{width:100%; margin-left:0;margin-right:0;margin-bottom:0;padding-bottom:0}
+              /* Article Section */
+              .postThumbnail{flex:0 0 calc(33.333% - 12.5px);overflow:hidden;border-radius:2px; margin-bottom:20px}
+              .postThumbnail > *{display:block;position:relative;padding-top:52.335%; transition:var(--transition-2); color:inherit}
+              .postThumbnail a{background: var(--transparent-bg) url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px' viewBox='0 0 50 50'><path d='M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z' fill='rgba(0,0,0,.1)'><animateTransform attributeType='xml' attributeName='transform' type='rotate' from='0 25 25' to='360 25 25' dur='0.6s' repeatCount='indefinite'/></path></svg>") center / 26px no-repeat}
+              .postThumbnail div{background: var(--transparent-bg)}
+              .postThumbnail div span:before{content:attr(data-text); opacity:.7; white-space:nowrap}
+              .postTitle{font-size:.9rem;line-height:1.5em}
+              .postTitle a, .postEntry.snippet, .itemTitle a, .itemEntry{color:inherit; display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+              .postTitle a, .itemTitle a{-webkit-line-clamp:3}
+              .postTitle a:hover, .itemTitle a:hover{color: #00ff55;} /* Add color here to change Post Title hover efect */
+              .postEntry.snippet, .itemEntry{display:-webkit-box} /* Change to display:none if you want to hide post snippets */
+              .onItem .postTitle{font-size:var(--post-titleSize); line-height:1.4em}
+              .onItem .postInfo{align-items:center;position:relative; margin-top:30px}
+              .onItem .postInfo.noAuthor.noComment, .onItem .postInfo.onSponsored{margin-top:0; display:none}
+              .onItem .postEntry{margin-top:40px; font-size:var(--post-fontSize); line-height:1.8em}
+              /* Article Style */
+              .postEntry img{display:inline-block;border-radius:2px;height:auto !important} .postEntry img.fullImg{display:block!important; margin-bottom:10px; position:relative;left:0; width:100%;max-width:none}
+              .postEntry .widget, .post .postAd > *{margin:50px 0}
+              .mainMenu{right:0;width:100%;background-color:transparent;overflow:hidden; opacity:0;visibility:hidden; border-right:0; z-index:11}
+              .mainMenu .section{background-color:var(--nav-bg); position:fixed;top:0;left:0;bottom:0; width:85%;max-width:480px; z-index:3;overflow-y:auto; transition:var(--transition-1); box-shadow:-4px 9px 25px -6px rgb(0 0 0 / 10%);border-radius:0 15px 15px 0; margin-left:-100%}
+              .htmlMenu .close{width:85%;max-width:480px;margin-left:-100%; border-radius:0 15px 0 0}
+              .htmlMenu .link, #LinkList002{padding-left:20px;padding-right:20px}
+              .htmlMenu > li li a{padding:10px 20px 10px 55px}
+              .htmlMenu > li.break:after{width:calc(100% - 40px);margin-left:20px;margin-right:20px}
+              .navInput:checked ~ .mainWrapper .mainMenu{width:100%;opacity:1;visibility:visible}
+              .navInput:checked ~ .mainWrapper .mainMenu .section{margin-left:0}
+              .navInput:checked ~ .mainWrapper .mainMenu .fullClose.menu{background:rgba(0,0,0,.5);opacity:1;visibility:visible}
+              .navInput:checked ~ .mainWrapper .htmlMenu .link .name, .navInput:checked ~ .mainWrapper .htmlMenu .link svg.down{display:block}
+              .navInput:checked ~ .mainWrapper .htmlMenu .dropMenu:checked ~ ul li{max-height:40px;opacity:1;visibility:visible}
+              .navInput:checked ~ .mainWrapper .htmlMenu a.link:hover{background-color:var(--transparent-bg)}
+              .navInput:checked ~ .mainWrapper .mainInner, .mainInner,
+              .navInput:checked ~ .mainWrapper footer, footer{margin-left:0}
+              .navInput:checked ~ .mainWrapper .htmlMenu .close,
+              .navInput:checked ~ .mainWrapper .mainMenu #LinkList002{width:85%;max-width:480px;margin-left:0}
+              .navInput:checked ~ .mainWrapper .mainMenu #LinkList002 label{display:none}
+              .navInput:checked ~ .mainWrapper .mainMenu #LinkList002 ul{display:flex}
+              .blogContent{display:block}
+              .blogContent .mainbar, .blogContent .sidebar{width:100%;padding:0; margin-right:auto;margin-left:auto}
+              .blogContent .sidebar{margin-top:50px}
+              .blogPosts div.hentry{width:calc(100% - 20px)}
+              .onIndex .blogContent .mainbar{max-width:none}
+              .onItem .postTitle{font-size:26px}
+              footer{padding-bottom:50px}
+
+              @media screen and (max-width:640px){
+              .Header h1, .Header h2{font-size:16px}
+              .headerLeft{padding-left:20px}
+              .headerRight, .notifContent, .sectionInner{padding-left:20px;padding-right:20px}
+              .blogPosts .hentry{width:calc(50% - 20px)}
+              .itemFeatured .itemThumbnail{flex:1 0 calc(50% - 10px)}
+              .itemFeatured .itemContent{width:calc(50% + 10px)}
+              .itemFeatured .itemTitle, .itemPopulars .itemTitle{font-size:16px}
+              .shareIcon a:after{display:none}
+              }
+              ::-webkit-scrollbar{-webkit-appearance:none;width:4px;height:5px}::-webkit-scrollbar-track{background-color:transparent}::-webkit-scrollbar-thumb{background-color:rgba(0,0,0,.15);border-radius:10px}::-webkit-scrollbar-thumb:hover{background-color:rgba(0,0,0,.45)}::-webkit-scrollbar-thumb:active{background-color:rgba(0,0,0,.45)}
+              .baca-tutor{display:inline-block;margin:12px 12px 12px 0;padding:10px 15px;outline:0;border:0;line-height:20px;color:#fefefe!important;background-color:var(--link-bg);font-size:13px;font-family:var(--font-body);overflow:hidden;width:100%;position:relative;top:-12px}
+              .baca-tutor:after{content:'';position:absolute;margin-left:10px;top:10px;padding:10px;z-index:2;background:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='none' stroke='%23fefefe' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' viewBox='0 0 24 24'><path d='M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6'/><polyline points='15 3 21 3 21 9'/><line x1='10' x2='21' y1='14' y2='3'/></svg>") center / 12px no-repeat;background-size:20px 20px}
+              header{width:100%;z-index:10;position:-webkit-sticky;position:sticky;top:0;overflow:hidden}
+              .dummyText i{display:block;background-color:rgba(0,0,0,.05);margin-bottom:10px;height:1.5em} .dummyText i.img{height:auto;min-height:200px;margin:2rem 10%}
+              .dummyHeader{display:flex;background-color:#fefefe;padding:15px;align-items:center;position:relative}.dummyHeader .dummyText i{margin:0 10px 0 0;width:60px}.dummyHeader .dummyText{display:flex;margin:0}
+              /* CSS Safelink ubah warna cari kode #f89000 */
+              .wcSafeShow{position:absolute;width:35px;height:35px;display:flex;right:10px}
+              .safeWrap{position:fixed;top:0;left:0;bottom:0;right:0;background:rgba(0,0,0,.5);z-index:999999;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}.panel-primary{background:#fff;text-align:center;display:block;overflow:hidden;width:100%;max-width:80%;padding:0 0 25px 0;border-radius:5px;margin:15% auto;box-shadow:0 1px 3px rgba(0,0,0,0.12),0 1px 2px rgba(0,0,0,0.24)}.panel-body{position:relative;margin:0 25px}.panel-heading h2{background:#f89000;color:#fff;margin:0 auto 25px auto;font-weight:400;padding:15px;font-size:20px}.panel-body input{background:rgba(0,0,0,0.04);width:100%;padding:15px;border-radius:5px;border:1px solid transparent;font-size:16px;color:#000;outline:none;text-indent:60px;transition:all .3s}.panel-body input:focus{background:#fff;color:#000;border-color:#f89000;outline:none;box-shadow:0 0 5px rgba(0,0,0,0.1)}.panel-body .input-group-btn{position:absolute;top:0;right:0}.panel-body button{border-radius:0 5px 5px 0;background:#f89000;color:#fff;border:0;padding:14px 52px;font-weight:500;outline:none;transition:all .3s}.panel-body button:hover,.panel-body button:focus{background:#f89000;outline:none}#generatelink{margin:20px auto 0 auto}#generatelink button{background:#f89000;border-radius:5px;font-size:14px;padding:14px 32px}#generatelink button:hover,#generatelink button:focus{background:#f89000;border-radius:5px;font-size:14px}#generatelink input{background:rgba(0,0,0,0.05);text-indent:0}#generatelink input:hover,#generatelink input:focus{background:#f89000;border-color:transparent;box-shadow:none}#generateloading{margin:20px auto 0 auto;font-size:20px;color:#f89000;font-weight:normal}
+              .panel-body:before{content:'\279C';background:rgba(0,0,0,0.05);position:absolute;left:0;top:0;color:#888;padding:12px 20px;border-radius:5px 0 0 5px;border-right:1px solid transparent;transition:all .6s}.panel-body:focus-within:before{content:'\279C';background:#f89000;color:#fff}.bt-success{display:inline-flex;align-items:center;margin:15px 15px;padding:10px 20px;outline:0;border:0;border-radius:2px;color:#fefefe;background-color:#f89000;font-size:14px;white-space:nowrap;overflow:hidden;max-width:100%;line-height:2em}.bt-success:hover{color:#f89000;background-color:transparent;border:1px solid #f89000}.hidden,.bt-success.hidden{display:none}.wcSafeClose{display:inline-flex;align-items:center;margin:15px auto -15px;padding:5px 15px;outline:0;border:0;border-radius:2px;color:#fefefe;background-color:#f89000;font-size:14px;white-space:nowrap;overflow:hidden;max-width:100%;line-height:2em}.copytoclipboard{margin:10px auto 5px}
+              #timer{margin:0 auto 20px auto;width:80px;text-align:center}.pietimer{position:relative;font-size:200px;width:1em;height:1em}.pietimer > .percent{position:absolute;top:25px;left:12px;width:3.33em;font-size:18px;text-align:center;display:none}.pietimer > .slice{position:absolute;width:1em;height:1em;clip:rect(0px,1em,1em,0.5em)}.pietimer >.slice.gt50{clip:rect(auto,auto,auto,auto)}.pietimer > .slice > .pie{border:0.06em solid #c0c0c0;position:absolute;width:80px;height:80px;clip:rect(0em,0.5em,1em,0em);border-radius:50%}.pietimer > .slice > .pie.fill{-moz-transform:rotate(180deg)!important;-webkit-transform:rotate(180deg)!important;-o-transform:rotate(180deg)!important;transform:rotate(180deg)!important}.pietimer.fill > .percent{display:none}.pietimer.fill > .slice > .pie{border:transparent;background-color:#c0c0c0;width:1em;height:1em}
+              .wcSafeShow svg{fill:none!important;stroke:#48525c;stroke-linecap:round;stroke-linejoin:round;stroke-width:1;width:22px;height:22px}
+              #generateloading svg{width:22px;height:22px;fill:#f89000}
+              .btn-primary svg,.darkMode .btn-primary svg{fill:none;stroke:#fff;stroke-width:1.5;width:22px;height:22px;vertical-align:-5px;margin-right:10px}
+              @media screen and (max-width:768px){.panel-body .input-group-btn{display:block;position:relative;overflow:hidden;margin:20px auto 0 auto}.panel-body button{border-radius:5px;width:100%}}
+              @media screen and (max-width:480px){.panel-primary{margin-top:30%}}
+              /* CSS darkmode sesuaikan classnya jika berbeda atau hapus bagian ini */
+              .darkMode .panel-primary{background:#2d2d30;color:#fefefe}
+              .darkMode .panel-body input,.darkMode .panel-body input:focus{background:#2d2d30;color:#fefefe}
+              .darkMode .wcSafeClose{color:#fefefe}
+
+              -->
+      </style>
+      <!--[ Adsense script placement ]-->
+      <!--<script defer='defer' src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0000000000000000' crossorigin='anonymous'/>-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+      <!--[ </head> close ]-->
+      <!--<head><style type='text/css'>@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:url(//fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu72xKOzY.woff2)format('woff2');unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:url(//fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu5mxKOzY.woff2)format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:url(//fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu7mxKOzY.woff2)format('woff2');unicode-range:U+1F00-1FFF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:url(//fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4WxKOzY.woff2)format('woff2');unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:url(//fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu7WxKOzY.woff2)format('woff2');unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:url(//fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu7GxKOzY.woff2)format('woff2');unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:url(//fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxK.woff2)format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}</style>
+      <link href='https://www.blogger.com/dyn-css/authorization.css?targetBlogID=5793225706288705898&amp;zx=8617419e-615f-4c5a-a572-30c44b1ac648' media='none' onload='if(media!=&#39;all&#39;)media=&#39;all&#39;' rel='stylesheet'/><noscript><link href='https://www.blogger.com/dyn-css/authorization.css?targetBlogID=5793225706288705898&amp;zx=8617419e-615f-4c5a-a572-30c44b1ac648' rel='stylesheet'/></noscript>
+      <meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
+      <meta name='google-adsense-platform-domain' content='blogspot.com'/>
+      
+      </head>-->
+    </head>
+  </head>
+  <body>
+    <body class="onItem onPost" id="mainContent">
+      <div class="mainWrapper">
+        <!--[ Header section ]-->
+        <header class="header" id="header">
+          <div style="text-align: center">
+            <a
+              class="Google-drive"
+              href="https://drive.google.com/drive/folders/1XFMQfHHJ5ow40fEI_hPkW-N5gFb18mOe?usp=sharing"
+              id="galeri"
+              >Klik Disini ya</a
+            >
+          </div>
+        </header>
+        <div class="mainContent">
+          <!--[ Navigation section ]-->
+          <!--[ Content section ]-->
+          <div class="mainInner sectionInner">
+            <!--[ Blog content ]-->
+            <div class="blogContent">
+              <!--[ Main content ]-->
+              <main class="mainbar">
+                <div class="section" id="main-widget">
+                  <div class="widget Blog" data-version="2" id="Blog1">
+                    <div class="blogPosts">
+                      <article class="hentry post">
+                        <h1 class="postTitle">
+                          <span> </span>
+                        </h1>
+                        <div class="postInner">
+                          <div class="postAd"></div>
+                          <div
+                            class="postEntry"
+                            id="postID-5415102696349631243"
+                          >
+                            <div id="timer"></div>
+                            <div style="text-align: center">
+                              <button
+                                class="bt-success hidden"
+                                disabled=""
+                                id="wcGetLink"
+                              >
+                                Get Link
+                              </button>
+                            </div>
+                            <div class="postBody" id="postBody">
+                              <p class="dummyText">
+                                <i style="margin-left: 10%"></i>
+                                <i
+                                  >https://drive.google.com/drive/folders/1TsREeaAoTfsxftgdUVHdSh5ND0CmUBqo?usp=sharing</i
+                                >
+                                <i
+                                  >https://drive.google.com/drive/folders/1TsREeaAoTfsxftgdUVHdSh5ND0CmUBqo?usp=sharing</i
+                                >
+                                <i
+                                  >https://drive.google.com/drive/folders/1TsREeaAoTfsxftgdUVHdSh5ND0CmUBqo?usp=sharing</i
+                                >
+                                <i
+                                  >https://drive.google.com/drive/folders/1TsREeaAoTfsxftgdUVHdSh5ND0CmUBqo?usp=sharing</i
+                                >
+                                <i style="width: 30%"></i>
+                                <i class="img">gambar.32131231231312</i>
+                                <i style="margin-left: 10%"></i>
+                                <i
+                                  >https://drive.google.com/drive/folders/1TsREeaAoTfsxftgdUVHdSh5ND0CmUBqo?usp=sharing</i
+                                >
+                                <i
+                                  >https://drive.google.com/drive/folders/1TsREeaAoTfsxftgdUVHdSh5ND0CmUBqo?usp=sharing</i
+                                >
+                                <i
+                                  >https://drive.google.com/drive/folders/1TsREeaAoTfsxftgdUVHdSh5ND0CmUBqo?usp=sharing</i
+                                >
+                                <i
+                                  >https://drive.google.com/drive/folders/1TsREeaAoTfsxftgdUVHdSh5ND0CmUBqo?usp=sharing</i
+                                >
+                                <i style="width: 30%"></i>
+                              </p>
+                              <style>
+                                /* login fitur by wendy code */
+                                .wendyloginwrap {
+                                  background: url("img1.jpg");
+                                  background-size: cover;
+                                  background-position: center;
+                                  width: 100%;
+                                  height: 100%;
+                                  position: fixed;
+                                  left: 0;
+                                  top: 0;
+                                  z-index: 9999999999;
+                                }
+                                .wendyloginform {
+                                  width: 800px;
+                                  padding: 30px;
+                                  background: rgba(0, 0, 0, 0.8);
+                                  position: absolute;
+                                  top: 50%;
+                                  left: 50%;
+                                  transform: translate(-50%, -50%);
+                                  color: rgb(145, 159, 162);
+                                  text-align: center;
+                                  border-radius: 20px;
+                                  font-size: 16px;
+                                }
+                                .wendyjudul {
+                                  margin: 0;
+                                  padding: 30px;
+                                  font-size: 48px;
+                                  font-weight: 600;
+                                }
+                                .wendyloginform input[type="text"],
+                                .wendyloginform input[type="password"] {
+                                  background: none;
+                                  border: 1px solid white;
+                                  outline: none;
+                                  border-radius: 20px;
+                                  color: white;
+                                  padding: 5px;
+                                  margin: 30px auto;
+                                  text-align: center;
+                                  width: 170px;
+                                }
+                                .wendyloginform input[type="text"]:focus,
+                                .wendyloginform input[type="password"]:focus {
+                                  border: 2px solid #f09800;
+                                }
+                                .wendyloginform input[type="submit"] {
+                                  padding: 3px 20px;
+                                  background: rgba(0, 0, 0, 0.5);
+                                  border: 1px solid white;
+                                  border-radius: 5px;
+                                  outline: none;
+                                  color: white;
+                                  width: 170px;
+                                }
+                                .wendyloginform input[type="submit"]:hover {
+                                  border: 0;
+                                  color: #f09800;
+                                  box-shadow: 3px 3px 8px #f09800;
+                                }
+                                .wendyloginform svg {
+                                  position: absolute;
+                                  margin: 35px 0 0 -35px;
+                                }
+                                svg.wendy {
+                                  width: 24px;
+                                  height: 24px;
+                                  fill: currentColor;
+                                }
+                                .hidden {
+                                  display: none;
+                                }
+                                @media screen and (max-width: 480px) {
+                                  .wendyloginform {
+                                    width: 350px;
+                                  }
+                                }
+                              </style>
+                              <script type="text/javascript">
+                                //login fitur by wendy code
+                                function verify() {
+                                  if (
+                                    document.querySelector("#password")
+                                      .value === "ag250499"
+                                  ) {
+                                    document
+                                      .querySelector(".wendyloginwrap")
+                                      .classList.add("hidden");
+                                  } else {
+                                    alert(
+                                      "Anda kurang beruntung rupanya yaaaaaaaa !"
+                                    );
+                                    password.setSelectionRange(
+                                      0,
+                                      password.value.length
+                                    );
+                                  }
+                                  return false;
+                                }
+                                const show = () => {
+                                  let password =
+                                    document.querySelector("#password");
+                                  let sandi = document.querySelector(".icon1");
+                                  if (password.type === "password") {
+                                    password.type = "text";
+                                    sandi.style.color = "#f09800";
+                                  } else {
+                                    password.type = "password";
+                                    sandi.style.color = "#fff";
+                                  }
+                                };
+                              </script>
+                              <div class="wendyloginwrap">
+                                <div class="wendyloginform">
+                                  <div class="wendyjudul">
+                                    LOGIN ATUH DA MAMPU
+                                  </div>
+                                  <input
+                                    type="text"
+                                    placeholder="Katasandi1521"
+                                    id="password"
+                                  />
+                                  <svg
+                                    class="wendy icon1"
+                                    viewBox="0 0 24 24"
+                                    onclick="show()"
+                                    style="color: rgb(240, 152, 0)"
+                                  >
+                                    <path
+                                      d="M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C17,19.5 21.27,16.39 23,12C21.27,7.61 17,4.5 12,4.5Z"
+                                    ></path>
+                                  </svg>
+                                  <input
+                                    type="submit"
+                                    value="LOGIN"
+                                    onclick="verify()"
+                                  />
+                                </div>
+                              </div>
+                              <script>
+                                document.getElementById("Drive-Google").href =
+                                  "https://drive.google.com/drive/folders/1TsREeaAoTfsxftgdUVHdSh5ND0CmUBqo?usp=sharing";
+                              </script>
+                            </div>
+                            <div style="text-align: center">
+                              <button
+                                class="bt-success hidden"
+                                disabled=""
+                                id="gotolink"
+                              >
+                                Go to Link
+                              </button>
+                            </div>
+                          </div>
+                          <div class="postAd"></div>
+                          <script type="application/ld+json">
+                            {
+                              "@context": "http://schema.org",
+                              "@type": "BlogPosting",
+                              "mainEntityOfPage": {
+                                "@type": "WebPage",
+                                "@id": "https://demo.wendycode.com/2021/04/login-password.html"
+                              },
+                              "headline": "membuat fitur login password di blogger",
+                              "description": "LOGIN",
+                              "datePublished": "2021-04-29T02:33:00-07:00",
+                              "dateModified": "2021-09-16T08:11:15-07:00",
+                              "image": {
+                                "@type": "ImageObject",
+                                "url": "https://lh3.googleusercontent.com/ULB6iBuCeTVvSjjjU1A-O8e9ZpVba6uvyhtiWRti_rBAs9yMYOFBujxriJRZ-A=w1200",
+                                "height": 348,
+                                "width": 1200
+                              },
+                              "publisher": {
+                                "@type": "Organization",
+                                "name": "Blogger",
+                                "logo": {
+                                  "@type": "ImageObject",
+                                  "url": "https://lh3.googleusercontent.com/ULB6iBuCeTVvSjjjU1A-O8e9ZpVba6uvyhtiWRti_rBAs9yMYOFBujxriJRZ-A=h60",
+                                  "width": 206,
+                                  "height": 60
+                                }
+                              },
+                              "author": {
+                                "@type": "Person",
+                                "name": "wendy"
+                              }
+                            }
+                          </script>
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+                </div>
+              </main>
+              <!--[ Sidebar content ]-->
+              <aside class="sidebar"></aside>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        //<![CDATA[
+        /* Pengaturan safeLink */
+        var setTimer = 10; //waktu detik
+        var setColor = "#f89000"; //warna loading timer
+        var setText = "Harap Tunggu..."; //pesan pada tombol
+        var setCopyUrl = "Salin URL"; // generator salin
+        var setCopied = "URL Tersalin"; //generator tersalin
+
+        // global script version 1.1 open source code
+        function safeLDefer() {
+          var d = document.createElement("script");
+          (d.src =
+            "https://cdn.jsdelivr.net/gh/choipanwendy/safelink-v1.1@main/wcsafelink.js"),
+            document.body.appendChild(d);
+        }
+        window.addEventListener
+          ? window.addEventListener("load", safeLDefer, !1)
+          : window.attachEvent
+          ? window.attachEvent("onload", safeLDefer)
+          : (window.onload = safeLDefer);
+        //]]>
+      </script>
+      <!--[ </body> close ]-->
+      <!--
+      <script type="text/javascript" src="https://www.blogger.com/static/v1/widgets/1671891383-widgets.js"></script>
+      <script type='text/javascript'>
+      window['__wavt'] = 'AOuZoY6sUdeytZptwpZ_ND6I9STebtGyuQ:1710492297807';_WidgetManager._Init('//www.blogger.com/rearrange?blogID\x3d5793225706288705898','//demo.wendycode.com/2021/04/login-password.html','5793225706288705898');
+      _WidgetManager._SetDataContext([{'name': 'blog', 'data': {'blogId': '5793225706288705898', 'title': 'demo', 'url': 'https://demo.wendycode.com/2021/04/login-password.html', 'canonicalUrl': 'https://demo.wendycode.com/2021/04/login-password.html', 'homepageUrl': 'https://demo.wendycode.com/', 'searchUrl': 'https://demo.wendycode.com/search', 'canonicalHomepageUrl': 'https://demo.wendycode.com/', 'blogspotFaviconUrl': 'https://demo.wendycode.com/favicon.ico', 'bloggerUrl': 'https://www.blogger.com', 'hasCustomDomain': true, 'httpsEnabled': true, 'enabledCommentProfileImages': true, 'gPlusViewType': 'FILTERED_POSTMOD', 'adultContent': false, 'analyticsAccountNumber': '', 'encoding': 'UTF-8', 'locale': 'en', 'localeUnderscoreDelimited': 'en', 'languageDirection': 'ltr', 'isPrivate': true, 'isMobile': false, 'isMobileRequest': false, 'mobileClass': '', 'isPrivateBlog': false, 'isDynamicViewsAvailable': true, 'feedLinks': '\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22demo - Atom\x22 href\x3d\x22https://demo.wendycode.com/feeds/posts/default\x22 /\x3e\n\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/rss+xml\x22 title\x3d\x22demo - RSS\x22 href\x3d\x22https://demo.wendycode.com/feeds/posts/default?alt\x3drss\x22 /\x3e\n\x3clink rel\x3d\x22service.post\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22demo - Atom\x22 href\x3d\x22https://www.blogger.com/feeds/5793225706288705898/posts/default\x22 /\x3e\n\n\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22demo - Atom\x22 href\x3d\x22https://demo.wendycode.com/feeds/5415102696349631243/comments/default\x22 /\x3e\n', 'meTag': '', 'adsenseHostId': 'ca-host-pub-1556223355139109', 'adsenseHasAds': false, 'adsenseAutoAds': false, 'boqCommentIframeForm': true, 'loginRedirectParam': '', 'view': '', 'dynamicViewsCommentsSrc': '//www.blogblog.com/dynamicviews/4224c15c4e7c9321/js/comments.js', 'dynamicViewsScriptSrc': '//www.blogblog.com/dynamicviews/aae4e6dd9baa8dcc', 'plusOneApiSrc': 'https://apis.google.com/js/platform.js', 'disableGComments': true, 'interstitialAccepted': false, 'sharing': {'platforms': [{'name': 'Get link', 'key': 'link', 'shareMessage': 'Get link', 'target': ''}, {'name': 'Facebook', 'key': 'facebook', 'shareMessage': 'Share to Facebook', 'target': 'facebook'}, {'name': 'BlogThis!', 'key': 'blogThis', 'shareMessage': 'BlogThis!', 'target': 'blog'}, {'name': 'Twitter', 'key': 'twitter', 'shareMessage': 'Share to Twitter', 'target': 'twitter'}, {'name': 'Pinterest', 'key': 'pinterest', 'shareMessage': 'Share to Pinterest', 'target': 'pinterest'}, {'name': 'Email', 'key': 'email', 'shareMessage': 'Email', 'target': 'email'}], 'disableGooglePlus': true, 'googlePlusShareButtonWidth': 0, 'googlePlusBootstrap': '\x3cscript type\x3d\x22text/javascript\x22\x3ewindow.___gcfg \x3d {\x27lang\x27: \x27en\x27};\x3c/script\x3e'}, 'hasCustomJumpLinkMessage': false, 'jumpLinkMessage': 'Read more', 'pageType': 'item', 'postId': '5415102696349631243', 'pageName': 'membuat fitur login password di blogger', 'pageTitle': 'demo: membuat fitur login password di blogger', 'metaDescription': ''}}, {'name': 'features', 'data': {}}, {'name': 'messages', 'data': {'edit': 'Edit', 'linkCopiedToClipboard': 'Link copied to clipboard!', 'ok': 'Ok', 'postLink': 'Post Link'}}, {'name': 'template', 'data': {'name': 'custom', 'localizedName': 'Custom', 'isResponsive': true, 'isAlternateRendering': false, 'isCustom': true}}, {'name': 'view', 'data': {'classic': {'name': 'classic', 'url': '?view\x3dclassic'}, 'flipcard': {'name': 'flipcard', 'url': '?view\x3dflipcard'}, 'magazine': {'name': 'magazine', 'url': '?view\x3dmagazine'}, 'mosaic': {'name': 'mosaic', 'url': '?view\x3dmosaic'}, 'sidebar': {'name': 'sidebar', 'url': '?view\x3dsidebar'}, 'snapshot': {'name': 'snapshot', 'url': '?view\x3dsnapshot'}, 'timeslide': {'name': 'timeslide', 'url': '?view\x3dtimeslide'}, 'isMobile': false, 'title': 'membuat fitur login password di blogger', 'description': 'blog tes', 'url': 'https://demo.wendycode.com/2021/04/login-password.html', 'type': 'item', 'isSingleItem': true, 'isMultipleItems': false, 'isError': false, 'isPage': false, 'isPost': true, 'isHomepage': false, 'isArchive': false, 'isLabelSearch': false, 'postId': 5415102696349631243}}, {'name': 'widgets', 'data': [{'title': 'Blog Posts', 'type': 'Blog', 'sectionId': 'main-widget', 'id': 'Blog1', 'posts': [{'id': '5415102696349631243', 'title': 'membuat fitur login password di blogger', 'showInlineAds': false}], 'footerBylines': [{'regionName': 'footer1', 'items': [{'name': 'author', 'label': 'Oleh'}, {'name': 'timestamp', 'label': 'On'}, {'name': 'comments', 'label': 'Comment'}]}, {'regionName': 'footer2', 'items': [{'name': 'labels', 'label': 'in'}]}], 'allBylineItems': [{'name': 'author', 'label': 'Oleh'}, {'name': 'timestamp', 'label': 'On'}, {'name': 'comments', 'label': 'Comment'}, {'name': 'labels', 'label': 'in'}]}]}]);
+      _WidgetManager._RegisterWidget('_BlogView', new _WidgetInfo('Blog1', 'main-widget', document.getElementById('Blog1'), {'cmtInteractionsEnabled': false}, 'displayModeFull'));
+      </script>
+      </body>-->
+      <script src="https://cdn.jsdelivr.net/gh/choipanwendy/safelink-v1.1@main/wcsafelink.js"></script>
+    </body>
+  </body>
+</html>
